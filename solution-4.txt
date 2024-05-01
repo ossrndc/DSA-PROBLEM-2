@@ -1,0 +1,20 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b,c,diff;
+        cin>>a>>b>>c;
+        diff=abs(b-c);
+        if(a>diff){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
+
+ return 0;
+}
