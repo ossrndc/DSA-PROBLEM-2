@@ -45,3 +45,36 @@ For each test case, output on a new line, two space-separated integers, the mini
 **Test case  1:**  You had only  1  chocolate, so that must have been given to only  1  child.
 
 **Test case  22:**  You had  2  chocolates, so either you could have given both chocolates to  1  child only, or  1  chocolate each to  2  children.
+
+#include <iostream>
+using namespace std;
+void
+chocolatedis ()
+{
+  int N;
+  cin >> N;
+  if (N >= 1 && N <= 1000)
+	{
+	  if (N % 2 == 0)
+		{
+		  cout << N / 2 << " " << N;
+		}
+	  else
+		{
+		  cout << (N / 2) + 1 << " " << N;
+		}
+	}
+}
+
+int main ()
+{
+  int t;
+  cin >> t;
+  if (t >= 1 && t <= 1000)
+	{
+	  for (int i = 1; i <= t; i++)
+		{
+		  chocolatedis ();
+		}
+	}
+}
